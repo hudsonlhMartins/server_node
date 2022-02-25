@@ -1,0 +1,27 @@
+<%- include ('../partials/header') -%>
+
+  <main>
+    <h1>Tabuada do num <%=num%></h1>
+
+    <div class="mb-5">
+      
+        <table class="table table-stripd table-bordered">
+            
+                <% tabuada.map(item=>{ %>
+                <tr>
+                    <td><%= item.num %></td>
+                    <td>x</td>
+                    <td><%= item.i %></td>
+                    <td>=</td>
+                    <td><%= item.resultado %></td>
+                </tr>
+                <% }) %>
+           
+
+        </table>
+
+    </div>
+
+
+    
+<%- include ('../partials/footer') -%>

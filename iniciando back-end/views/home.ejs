@@ -1,0 +1,9 @@
+<%- include ('partials/header') -%>
+    <p><%= time%></p>
+    <ul>
+        <% names.forEach(item =>{ %>
+            <li> <%= item %> </li>
+        <% })  %>
+
+    </ul>
+<%- include ('partials/footer') -%>
